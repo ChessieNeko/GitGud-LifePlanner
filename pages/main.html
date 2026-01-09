@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="app">
+        <span id="current-balance" class="balance-value">R$100</span>
+        <form id="income-form">
+            <h1>Entrada</h1>
+
+            <label for="">Valor
+                <input type="number">
+            </label>
+            <label for="income-type">Tipo</label>
+            <select name="income-type" id="income-type">
+                <option value="salary">Salário</option>
+                <option value="extra">Extra</option>
+            </select>
+            
+            <label for="">Data
+                <input type="date">
+            </label>
+            <label for="">Descrição
+                <input type="text">
+            </label>
+            
+            <button type="submit">Registrar</button>
+        </form>
+        <form id="expense-form">
+            <h1>Saída</h1>
+
+            <label for="">Valor
+                <input type="number">
+            </label>
+
+            <label for="">Data
+                <input type="date">
+            </label>
+            <label for="">Descrição
+                <input type="text">
+            </label>
+            <div class="form-tags">Tag
+                <input type="checkbox" id="food" name="food" value="food">
+                <label for="food">Comida</label>
+                <input type="checkbox" id="kpop" name="kpop" value="kpop">
+                <label for="kpop">K-pop</label>
+                <input type="checkbox" id="work" name="work" value="work">
+                <label for="work">Trabalho</label>
+                <input type="checkbox" id="house" name="house" value="house">
+                <label for="house">Casa</label>
+                <input type="checkbox" id="study" name="study" value="study">
+                <label for="study">Estudos</label>
+            </div>
+            
+            <button type="submit">Registrar</button>
+        </form>
+
+    </div>
+</body>
+</html>

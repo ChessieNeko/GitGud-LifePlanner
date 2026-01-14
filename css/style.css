@@ -1,3 +1,37 @@
 body{
-    background-color: rgb(179, 255, 245);
+    height: 100vh;/*n funciona*/
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: indianred;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+nav ul.active{
+    background-color: blueviolet;
+    /*position: absolute;*/
+}
+.floating-menu{
+    display: none;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+@media(max-width: 360px){
+    body{
+        background-color: rgb(196, 252, 244);
+    }
 }

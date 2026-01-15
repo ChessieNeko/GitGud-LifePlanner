@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>돈 있어요</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/navmenu.css">
+</head>
+<body>
+    <div id="app">
+        <form id="income-form">
+            <h1>Entrada</h1>
+
+            <div class="income-value">
+                <label for="">
+                    <span class="label-text">Valor</span>
+                    <div class="input-money">
+                        <span class="currency-symbol">R$</span>
+                        <input type="number" placeholder="100">
+                    </div>
+                </label>
+            </div>
+            <div class="input-infos">
+                <label for="income-type">Tipo</label>
+                <select name="income-type" id="income-type">
+                    <option value="salary">Salário</option>
+                    <option value="extra">Extra</option>
+                </select>
+
+                <label for="">Data
+                    <input type="date">
+                </label>
+                <label for="">Descrição
+                    <input type="text">
+                </label>
+
+                <button type="submit">Registrar</button>
+            </div>
+        </form>
+
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+</html>

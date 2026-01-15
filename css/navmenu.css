@@ -1,0 +1,51 @@
+nav{
+    background-color: rgb(248, 222, 255);
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0; 
+}
+nav ul{  
+    height: 100%;
+    list-style: none;  
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav li a{
+    color: rgb(103, 103, 103);
+}
+
+.menu-toggle-wrapper{
+    position: relative;
+}
+.floating-menu{
+    gap: 30px;
+    
+    position: absolute;
+    bottom: 40px;/*gambiarra?*/
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+.floating-menu.active{
+    display: flex;
+}
+.floating-menu .item{
+    background-color: rgb(55, 101, 9);
+    border-radius: 50%;
+    padding: 15px;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+@media(max-width: 360px){
+    body{
+        background-color:rgb(254, 244, 231);
+    }
+}

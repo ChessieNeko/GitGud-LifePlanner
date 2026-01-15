@@ -6,6 +6,7 @@
     <title>돈 있어요</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/navmenu.css">
 </head>
 <body>
     <nav>
@@ -16,8 +17,8 @@
                 <button class="menu-toggle">☰</button>
 
                 <div class="floating-menu">
-                    <a href="#" class="item">Entrada</a>
-                    <a href="#" class="item">Saída</a>
+                    <a href="addIncome.html" class="item">+</a>
+                    <a href="addExpenses.html" class="item">-</a>
                 </div>
             </li>
             <li><a href="#">Goals</a></li>
@@ -25,7 +26,24 @@
         </ul>
     </nav>
     <div id="app">
-        <span id="current-balance" class="balance-value">R$100</span>
+        <div class="balance-display">
+            <div class="current-balance">
+                <h2>Total Balance:</h2>
+                <span class="balance-value">R$100</span>
+            </div>
+            <div class="income-expenses">
+                <div class="current-income">
+                    <h2>Income:</h2>
+                    <span class="income-value">R$100</span>
+                </div>
+                <div class="current-expense">
+                    <h2>Expenses:</h2>
+                    <span class="expense-value">R$100</span>
+                </div>
+            </div>
+        </div>
+
+
         <form id="income-form">
             <h1>Entrada</h1>
 

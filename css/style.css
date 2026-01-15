@@ -1,37 +1,76 @@
+html{
+    height: 100%;
+    font-family: sans-serif;
+}
 body{
-    height: 100vh;/*n funciona*/
-}
-nav{
+    height: 100dvh;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+
+    overflow: hidden;
+}
+#app{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.balance-display{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(100, 100, 231);
+    height: 25%;
+}
+.current-balance{
+    flex: 6;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    background-color: indianred;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    background-color: rgb(29, 182, 121);
 }
-
-nav ul{
+.income-expenses{
+    flex: 4;
     display: flex;
-    list-style: none;
-    gap: 20px;
-}
-nav ul.active{
-    background-color: blueviolet;
-    /*position: absolute;*/
-}
-.floating-menu{
-    display: none;
+    align-items: center;
+    justify-content: space-around;
+    background-color: red;
 }
 
-nav a{
-    color: #fff;
-    text-decoration: none;
+#income-form{
+    background-color: #68e783;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    font-size: 20px;
 }
-
-
-@media(max-width: 360px){
-    body{
-        background-color: rgb(196, 252, 244);
-    }
+#income-form input{
+    outline: none;
+}
+#income-form h1{
+    padding: 15px;
+}
+.income-value{
+    flex: 2.5;
+    display: flex;
+    align-items: flex-end;
+    
+    padding: 30px;
+    background-color: #fb00ff51;
+}
+.income-value input{
+    width: 100%;
+    font-size: 40px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    margin-top: 10px;
+}
+.input-infos{
+    flex: 7.5;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #ff7f50b1;
+    border-radius: 30px 30px 0 0;
+    width: 100%;
 }

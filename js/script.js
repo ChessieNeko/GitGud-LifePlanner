@@ -1,4 +1,4 @@
 
 document.querySelector('.menu-toggle').addEventListener('click',()=>{
-    document.querySelector('nav ul').classList.toggle('active');
+    document.querySelector('.floating-menu').classList.toggle('active');
 })
